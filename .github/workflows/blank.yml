@@ -1,0 +1,48 @@
+operations = input("Enter operation:")
+firstnum = int(input("Enter first number:"))
+secondnum = float(input("Enter second number:"))
+expected = float(input("Enter expected answer:"))
+
+def add(firstnum, secondnum):
+    return firstnum + secondnum
+def multiply(firstnum, secondnum):
+    return firstnum * secondnum
+def divide(firstnum, secondnum):
+    return firstnum / secondnum
+def subtract(firstnum, secondnum):
+     return firstnum - secondnum
+def remainder(firstnum, secondnum):
+    return secondnum % firstnum
+def exponent(firstnum, secondnum):
+    return firstnum ** secondnum
+
+
+if operations == "add" :
+     result = add(firstnum, secondnum)
+elif operations == "multiply" :
+     result = multiply(firstnum, secondnum) 
+
+if operations == "divide" :
+     result = divide(firstnum, secondnum)
+elif secondnum == 0:
+    print("inalid input. Please ty again.")
+
+if operations == "subtract":
+     result = (subtract(firstnum, secondnum))
+
+if operations == "remainder" :
+      result = remainder(firstnum, secondnum)
+elif secondnum == 0:
+    print("invalid input. Please try again.")
+
+elif operations == "exponent":
+      result = exponent(firstnum, secondnum)
+
+if result == expected :
+    print("You were correct! The answer is " + str(result))
+
+if result != expected :
+    print("Not quite. You guessed " + str(expected) + " but the actual answer was " + str(result))
+ 
+
+    
